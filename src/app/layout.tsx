@@ -6,8 +6,8 @@ import { ReactNode } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Salus",
-  description: "Salus OS",
+  title: "Biblioteca Wiki",
+  description: "Biblioteca Wiki",
 };
 
 interface RootLayoutProps {

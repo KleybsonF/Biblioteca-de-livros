@@ -34,6 +34,7 @@ const BookPage = async ({searchParams}: {
             <td>Gênero</td>
             <td>Autor</td>
             <td>Action</td>
+            <td>Description</td>
           </tr>
         </thead>
         <tbody>
@@ -42,6 +43,11 @@ const BookPage = async ({searchParams}: {
               <td>{u.titulo}</td>
               <td>{u.genero}</td>
               <td>{u.autor}</td>
+              <td>
+                <div className="text-ellipsis overflow-hidden whitespace-nowrap	w-[200px]">
+                  {u.descricao}
+                </div>
+              </td>
               <td>
                 <div className="buttons flex gap-2">
                   <Link href={`/dashboard/book/${u.id}`}>
