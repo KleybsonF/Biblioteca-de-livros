@@ -20,6 +20,7 @@ export const fetchUsers = async (res: {
       .limit(res.take)
       .skip(res.take * (res.page-1));
 
+      
     return {count, users};
   } catch (error: any) {
     console.log(error)
@@ -61,6 +62,16 @@ export const fetchUser = async (id: string) => {
   }
 }
 
+export const fetchBook = async (id: string) => {
+  try {
+    connect();
+    const book = await BookModel.findById(id)
+    return book
+  } catch (error: any) {
+    console.log(error)
+    throw new Error(error);
+  }
+}
 export const fetchProducts = async (res: {
   q: string,
   page: number,

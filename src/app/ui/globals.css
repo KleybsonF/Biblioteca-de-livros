@@ -9,3 +9,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.girl {
+  left: -40%;
+  top: 150px;
+}
+
+.wiki {
+  right: -40%;
+  top: 150px;
+  width: 454px;
+  height: 501px;
+}

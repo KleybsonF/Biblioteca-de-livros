@@ -21,78 +21,31 @@ const menuItens = [
     title: "Pages",
     list: [
       {
-        title: "Dashboard",
-        path: "/dashboard",
-        icon: <MdDashboard />
-      },
-      {
-        title: "Livros",
+        title: "Pagina Inicial",
         path: "/dashboard/book",
         icon: <MdSupervisedUserCircle />
       },
       {
-        title: "Users",
+        title: "Créditos",
         path: "/dashboard/users",
         icon: <MdSupervisedUserCircle />
       },
       {
-        title: "Porducts",
-        path: "/dashboard/products",
-        icon: <MdShoppingBag />
-      },
-      {
-        title: "Transactions",
-        path: "/dashboard/transactions",
-        icon: <MdAttachMoney />
+        title: "Logout",
+        path: "/",
+        icon: <MdLogout />
       },
     ]
   },
-  {
-    title: "Analytics",
-    list: [
-      {
-        title: "Revenue",
-        path: "/dashboard/revenue",
-        icon: <MdWork />
-      },
-      {
-        title: "Reports",
-        path: "/dashboard/reports",
-        icon: <MdAnalytics />
-      },
-      {
-        title: "Teams",
-        path: "/dashboard/teams",
-        icon: <MdPeople />
-      },
-    ]
-  },
-  {
-    title: "User",
-    list: [
-      {
-        title: "Settings",
-        path: "/dashboard/settings",
-        icon: <MdOutlineSettings />
-      },
-      {
-        title: "Help",
-        path: "/dashboard/help",
-        icon: <MdHelpCenter />
-      },
-    ]
-  }
+
 ]
 
 const Sidebar = () => {
   return (
   <div className="sticky top-5">
     <div className="flex items-center gap-[20px] mb-[20px]">
-      <Image className="bg-white rounded-full object-cover" priority={true} src="/icon-user.png" alt="User Image" width={50} height={50} />
-      <div className="flex flex-col">
-        <span className="font-medium">Kleybson Felipe</span>
-        <span className="font-light text-xs text-gray-300">Administrator</span>
-      </div>
+      <Image className="bg-white rounded-full object-cover" priority={true} src="/logo-wiki.png" alt="User Image" width={100} height={100} />
+
     </div>
     <ul className="list-none">
       {menuItens.map(cat => (
@@ -104,11 +57,7 @@ const Sidebar = () => {
         </li>
       ))}
     </ul>
-    <button className={`flex p-5 my-1 text-base items-center gap-2 cursor-pointer rounded-md bg-transparent border-none w-full text-white hover:bg-gray-700 ${inter.className}`}>
-      <MdLogout size={20} />
-      Logout
-    </button>
-  </div>
+  </div>  
   )
 }
 

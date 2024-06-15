@@ -1,5 +1,6 @@
 import { delUser } from "@/app/bd/actions"
 import { fetchUsers } from "@/app/bd/data"
+import { BookInterface } from "@/app/interfaces/book.interface"
 import { UserInterface } from "@/app/interfaces/user.interface"
 import { Pagination } from "@/app/ui/dashboard/pagination/pagination"
 import { Search } from "@/app/ui/dashboard/search/search"
@@ -56,13 +57,12 @@ const UsersPage = async ({searchParams}: {
                   <Link href={`/dashboard/users/${u.id}`}>
                     <button className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-teal-500 view`}>View</button>
                   </Link>
-                  <form action={delUser}>
-                    <button name="id" value={u.id} className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-red-500 delete`}>Delete</button>
-                  </form>
+                  
                 </div>
               </td>
             </tr>
           ))}
+          
         </tbody>
       </table>
       <Pagination count={count}/>

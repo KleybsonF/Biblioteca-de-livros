@@ -47,9 +47,6 @@ const BookPage = async ({searchParams}: {
                   <Link href={`/dashboard/book/${u.id}`}>
                     <button className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-teal-500 view`}>View</button>
                   </Link>
-                  <form action={delUser}>
-                    <button name="id" value={u.id} className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-red-500 delete`}>Delete</button>
-                  </form>
                 </div>
               </td>
             </tr>
