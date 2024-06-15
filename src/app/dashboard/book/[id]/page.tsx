@@ -6,9 +6,7 @@ const SimgleBookPage = async ({params}: {
   params: {id: string}
 }) => {
   const { id } = params;
-  console.log(id)
   const u = await fetchBook(id)
-  console.log(u)
   return (
     <div className="container flex gap-12 mt-5">
       

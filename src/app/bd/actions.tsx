@@ -106,18 +106,17 @@ export const putUser = async (formData: any) => {
 }
 
 export const putBook = async (formData: any) => {
-  const { titulo, genero, autor, descricao } = Object.fromEntries(formData)
+  const { id, titulo, genero, autor, descricao } = Object.fromEntries(formData)
   console.log({ titulo, genero, autor, descricao })
 
   try {
     connect()
 
-    const updateFields: BookInterface = { titulo, genero, autor, descricao }
+    const updateFields: BookInterface = { id, titulo, genero, autor, descricao }
 
     Object.keys(updateFields).map(input => (input==="" || undefined) && delete updateFields[input])
 
-    //console.log({id, updateFields})
-    //await BookModel.findByIdAndUpdate(id, updateFields)
+    await BookModel.findByIdAndUpdate(id, updateFields)
 
   } catch (error) {
     console.error({error})
