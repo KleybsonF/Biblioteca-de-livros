@@ -12,7 +12,7 @@ export const connect = async () => {
   try {
     if (connection.isConnected) return;
 
-    const mongoURI = process.env.MONGO;
+    const mongoURI = process.env.MONGODB_URI;
     if (!mongoURI) {
       throw new Error("MongoDB URI not provided in environment variables");
     }
