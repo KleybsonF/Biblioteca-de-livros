@@ -33,7 +33,8 @@ const menuItens = [
       {
         title: "Voltar",
         path: "/",
-        icon: <MdLogout />
+        icon: <MdLogout />,
+        bgColor: 'red'
       },
     ]
   },

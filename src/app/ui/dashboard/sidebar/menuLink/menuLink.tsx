@@ -7,13 +7,14 @@ interface itemProps {
     icon: JSX.Element;
     title: string;
     path: string;
+    bgColor?: string;
   }
 }
 
 const MenuLink = ({item}: itemProps) => {
   const pathName = usePathname()
   return (
-    <Link className={`flex p-5 items-center gap-2 my-2 text-white rounded-md hover:bg-gray-700 no-underline ${pathName === item.path && 'bg-gray-700'}`} href={item.path}>
+    <Link className={`flex p-5 items-center gap-2 my-2 text-white rounded-md hover:bg-${item.bgColor || 'gray'}-700 no-underline ${pathName === item.path && 'bg-gray-600'}`} href={item.path}>
       {item.icon}
       {item.title}
     </Link>

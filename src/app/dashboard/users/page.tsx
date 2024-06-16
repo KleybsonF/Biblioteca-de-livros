@@ -1,12 +1,7 @@
-import { delUser } from "@/app/bd/actions"
 import { fetchUsers } from "@/app/bd/data"
-import { BookInterface } from "@/app/interfaces/book.interface"
 import { UserInterface } from "@/app/interfaces/user.interface"
 import { Pagination } from "@/app/ui/dashboard/pagination/pagination"
-import { Search } from "@/app/ui/dashboard/search/search"
 import styles from "@/app/ui/dashboard/user/user.module.css"
-import Image from "next/image"
-import Link from "next/link"
 
 const UsersPage = async ({searchParams}: {
   searchParams: {
