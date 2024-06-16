@@ -23,9 +23,9 @@ const Homepage = () => {
           <Image src="/library.jpg" alt="Livros em estatnte" width={634} height={416}></Image>
           <Image src="/girl.jpg" alt="Livros em estatnte" className="absolute girl" width={454} height={501}></Image>
           <div className="wiki absolute bg-[#478ac9] p-6 md:p-8 xl:p-10 ">
-            <h1 className="font-bold pb-6 text-4x1 text-2xl md:text-3xl xl:text-4xl">Bilioteca Wiki</h1>
+            <h1 className="font-bold pb-6 text-4x1 text-2xl md:text-3xl xl:text-4xl">InfoLivros</h1>
             <p className="leading-7 pb-6 italic text-justify">
-              Bem-vindo à Biblioteca Wiki, o seu portal definitivo para explorar o universo dos livros! Aqui, você encontrará uma descrição detalhada de cada obra cadastrada, desde clássicos da literatura até lançamentos contemporâneos. Nossa missão é fornecer informações abrangentes sobre cada livro, ajudando você a descobrir novos títulos, entender suas tramas e conhecer mais sobre seus autores. Navegue por nossa coleção e mergulhe no mundo fascinante da leitura!
+              Bem-vindo à InfoLivros, o seu portal definitivo para explorar o universo dos livros! Aqui, você encontrará uma descrição detalhada de cada obra cadastrada, desde clássicos da literatura até lançamentos contemporâneos. Nossa missão é fornecer informações abrangentes sobre cada livro, ajudando você a descobrir novos títulos, entender suas tramas e conhecer mais sobre seus autores. Navegue por nossa coleção e mergulhe no mundo fascinante da leitura!
             </p>
             <Link className="text-white font-bold text:1xl md:text-2xl xl:text-2xl" href={'/dashboard/book'}>ACESSE AGORA!</Link>
           </div>
@@ -34,9 +34,9 @@ const Homepage = () => {
 
       <section className="justify-center p-20 bg-[#292d33] lg:hidden flex">
         <div className="bg-[#478ac9] p-6 md:p-8 xl:p-10 ">
-          <h1 className="font-bold pb-6 text-4x1 text-2xl md:text-3xl xl:text-4xl">Bilioteca Wiki</h1>
+          <h1 className="font-bold pb-6 text-4x1 text-2xl md:text-3xl xl:text-4xl">InfoLivros</h1>
           <p className="leading-7 pb-6 italic text-justify">
-            Bem-vindo à Biblioteca Wiki, o seu portal definitivo para explorar o universo dos livros! Aqui, você encontrará uma descrição detalhada de cada obra cadastrada, desde clássicos da literatura até lançamentos contemporâneos. Nossa missão é fornecer informações abrangentes sobre cada livro, ajudando você a descobrir novos títulos, entender suas tramas e conhecer mais sobre seus autores. Navegue por nossa coleção e mergulhe no mundo fascinante da leitura!
+            Bem-vindo à InfoLivros, o seu portal definitivo para explorar o universo dos livros! Aqui, você encontrará uma descrição detalhada de cada obra cadastrada, desde clássicos da literatura até lançamentos contemporâneos. Nossa missão é fornecer informações abrangentes sobre cada livro, ajudando você a descobrir novos títulos, entender suas tramas e conhecer mais sobre seus autores. Navegue por nossa coleção e mergulhe no mundo fascinante da leitura!
           </p>
           <Link className="text-white font-bold text:1xl md:text-2xl xl:text-2xl" href={'/dashboard/book'}>ACESSE AGORA!</Link>
         </div>

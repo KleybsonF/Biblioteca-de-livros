@@ -22,43 +22,20 @@ const UsersPage = async ({searchParams}: {
 
   return (
     <div className="container bg-gray-800 p-5 rounded-md mt-5">
-      <div className="top flex items-center justify-between">
-        <Search placeholder="Search for a user ..." />
-        <Link href="/dashboard/users/add">
-        <button className="add-button p-2 bg-violet-500 text-white rounded-md border-none cursor-pointer">Add New</button>
-        </Link>
-      </div>
       <table className={`table w-full ${styles.table}`}>
         <thead>
           <tr>
-            <td>User</td>
+            <td>Membros</td>
             <td>Email</td>
-            <td>Created At</td>
-            <td>Role</td>
-            <td>Status</td>
-            <td>Action</td>
           </tr>
         </thead>
         <tbody>
           {users.map((u: UserInterface, i: number) => (
             <tr key={u.id}>
-              <td>
-                <div className="use flex gap-2 items-center">
-                  <Image src={u.img || "/no-avatar.png"} alt="" className="rounded-full object-cover" width={40} height={40} />
-                  {u.username}
-                </div>
+              <td>{u.username}
               </td>
               <td>{u.email}</td>
-              <td>{u.createdAt.toString().slice(4,16)}</td>
-              <td>{u.isAdmin ? "Admin" : "Client"}</td>
-              <td>{u.isActive ? "Active" : "Passive"}</td>
               <td>
-                <div className="buttons flex gap-2">
-                  <Link href={`/dashboard/users/${u.id}`}>
-                    <button className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-teal-500 view`}>View</button>
-                  </Link>
-                  
-                </div>
               </td>
             </tr>
           ))}

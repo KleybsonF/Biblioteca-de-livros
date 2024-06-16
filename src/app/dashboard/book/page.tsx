@@ -22,9 +22,9 @@ const BookPage = async ({searchParams}: {
   return (
     <div className="container bg-gray-800 p-5 rounded-md mt-5">
       <div className="top flex items-center justify-between">
-        <Search placeholder="Search for a user ..." />
+        <Search placeholder="Pesquisa" />
         <Link href="/dashboard/book/add">
-        <button className="add-button p-2 bg-violet-500 text-white rounded-md border-none cursor-pointer">Add New</button>
+        <button className="add-button p-2 bg-violet-500 text-white rounded-md border-none cursor-pointer">Adicionar Novo!</button>
         </Link>
       </div>
       <table className={`table w-full ${styles.table}`}>
@@ -33,7 +33,6 @@ const BookPage = async ({searchParams}: {
             <td>Título</td>
             <td>Gênero</td>
             <td>Autor</td>
-            <td>Action</td>
             <td>Description</td>
           </tr>
         </thead>
@@ -44,7 +43,7 @@ const BookPage = async ({searchParams}: {
               <td>{u.genero}</td>
               <td>{u.autor}</td>
               <td>
-                <div className="text-ellipsis overflow-hidden whitespace-nowrap	w-[200px]">
+                <div className="text-ellipsis overflow-hidden whitespace-nowrap	w-[550px]">
                   {u.descricao}
                 </div>
               </td>

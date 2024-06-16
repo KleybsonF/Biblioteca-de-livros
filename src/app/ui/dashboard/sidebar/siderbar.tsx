@@ -26,12 +26,12 @@ const menuItens = [
         icon: <MdSupervisedUserCircle />
       },
       {
-        title: "Créditos",
+        title: "Contribuintes",
         path: "/dashboard/users",
         icon: <MdSupervisedUserCircle />
       },
       {
-        title: "Logout",
+        title: "Voltar",
         path: "/",
         icon: <MdLogout />
       },

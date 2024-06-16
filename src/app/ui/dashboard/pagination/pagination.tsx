@@ -28,8 +28,8 @@ export const Pagination = ({count} : {
 
   return (
     <div className="container p-2 flex justify-between">
-      <button className="button px-5 py-2 cursor-pointer" onClick={() => handleChangePage('prev')} disabled={!hasPrev}>Previous</button>
-      <button className="button px-5 py-2 cursor-pointer" onClick={() => handleChangePage('next')} disabled={!hasNext}>Next</button>
+      <button className="button px-5 py-2 cursor-pointer" onClick={() => handleChangePage('Anterior')} disabled={!hasPrev}>Anterior</button>
+      <button className="button px-5 py-2 cursor-pointer" onClick={() => handleChangePage('Próximo')} disabled={!hasNext}>Próximo</button>
     </div>
   )
 }
