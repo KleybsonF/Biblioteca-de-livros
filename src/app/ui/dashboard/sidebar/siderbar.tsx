@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const menuItens = [
   {
-    title: "Pages",
+    title: "Páginas",
     list: [
       {
         title: "Pagina Inicial",

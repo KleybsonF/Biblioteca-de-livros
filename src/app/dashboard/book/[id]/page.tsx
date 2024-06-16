@@ -23,9 +23,9 @@ const SimgleBookPage = async ({params}: {
           <input type="text" name='autor' autoComplete="off" defaultValue={u.autor} className='p-5 my-2 border-2 border-solid border-gray-600 bg-gray-900 text-white rounded-md' />
 
           <label className='text-xs'>Descrição</label>
-          <textarea name="descricao" rows={1} defaultValue={u.descricao} className={`p-5 my-2 border-2 border-solid border-gray-600 bg-gray-900 text-white rounded-md`}></textarea>
+          <textarea name="descricao" rows={5} defaultValue={u.descricao} className={`p-5 my-2 border-2 border-solid border-gray-600 bg-gray-900 text-white rounded-md`}></textarea>
 
-          <button className="w-full p-5 border-none bg-teal-500 rounded-md text-white cursor-pointer mt-5">Update</button>
+          <button className="w-full p-5 border-none bg-teal-500 rounded-md text-white cursor-pointer mt-5">Atualizar</button>
         </form>
       </div>
     </div>

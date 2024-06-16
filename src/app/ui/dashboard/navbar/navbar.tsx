@@ -1,6 +1,5 @@
 "use client"
 import { usePathname } from "next/navigation"
-import { MdNotifications, MdOutlineChat, MdPublic, MdSearch } from "react-icons/md"
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -8,10 +7,12 @@ const Navbar = () => {
   const NAMES: any = {
     book:  'Livros',
     users: 'Contribuintes',
+    add: 'Adicionar',
+    dashboard: 'Você Não Deveria Estar Aqui! 😈'
   }
 
   function replaceName(name:string = '') {
-    let _replaceName = NAMES[name] ||  'Você não deveria estar aqui! 😈';
+    let _replaceName = NAMES[name] || name;
     return _replaceName;
   }
 

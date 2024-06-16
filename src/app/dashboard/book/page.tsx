@@ -1,10 +1,8 @@
-import { delUser } from "@/app/bd/actions"
 import { fetchBooks } from "@/app/bd/data"
 import { BookInterface } from "@/app/interfaces/book.interface"
 import { Pagination } from "@/app/ui/dashboard/pagination/pagination"
 import { Search } from "@/app/ui/dashboard/search/search"
 import styles from "@/app/ui/dashboard/user/user.module.css"
-import Image from "next/image"
 import Link from "next/link"
 
 const BookPage = async ({searchParams}: {
@@ -50,7 +48,7 @@ const BookPage = async ({searchParams}: {
               <td>
                 <div className="buttons flex gap-2">
                   <Link href={`/dashboard/book/${u.id}`}>
-                    <button className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-teal-500 view`}>View</button>
+                    <button className={`button py-2 px-5 rounded-md text-white border-none cursor-pointer bg-teal-500 view`}>Visualizar</button>
                   </Link>
                 </div>
               </td>
