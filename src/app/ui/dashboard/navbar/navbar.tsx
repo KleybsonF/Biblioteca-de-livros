@@ -8,7 +8,7 @@ const Navbar = () => {
     book:  'Livros',
     users: 'Contribuintes',
     add: 'Adicionar',
-    dashboard: 'Você Não Deveria Estar Aqui! 😈'
+    dashboard: 'Você Não Deveria Estar Aqui! 😈😈'
   }
 
   function replaceName(name:string = '') {
